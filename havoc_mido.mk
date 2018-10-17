@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, vendor/havoc/config/build/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/havoc/config/phone-xxhdpi-4096-dalvik-heap.mk)
 $(call inherit-product, vendor/havoc/config/phone-xxhdpi-2048-hwui-memory.mk)
 
 # Inherit from mido device
