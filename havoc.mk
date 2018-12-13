@@ -20,16 +20,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from mido device
 $(call inherit-product, device/xiaomi/mido/device.mk)
+$(call inherit-product, vendor/havoc/config/phone-xxhdpi-4096-dalvik-heap.mk)
+$(call inherit-product, vendor/havoc/config/phone-xxhdpi-2048-hwui-memory.mk)
+
 
 # Inherit some common LiquidRemix stuff.
-$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
+$(call inherit-product, vendor/havoc/config/common.mk)
 
 #Boot Animation res
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := mido
-PRODUCT_NAME := liquid_mido
+PRODUCT_NAME := havoc_mido
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 4
 PRODUCT_MANUFACTURER := Xiaomi
